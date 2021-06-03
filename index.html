@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta data -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- import bootstrap css CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- import font awsome library -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- favicon link -->
+    <link rel="icon" href="https://prod-cdn.wetransfer.net/packs/media/images/favicon-5a543f69.svg" type="image/svg" />
+    <!-- import css files -->
+    <link rel="stylesheet" href="./css/globals.css"/>
+    <link rel="stylesheet" href="./css/welcome.css"/>
+    <link rel="stylesheet" href="./css/home.css"/>
+    <link rel="stylesheet" href="./css/forms.css"/>
+    <link rel="stylesheet" href="./css/wetransfer.css"/>
+    <title>WeTransfer</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="nav___bar d-flex justify-content-between align-items-center">
+      <a class="navbar_logo_link" href="#"><img class="welcome_logo" src="https://prod-cdn.wetransfer.net/packs/media/images/apple-touch-icon-bd1315cf.png" alt="Logo"></a>
+      <div class="navbar_links_block d-flex justify-content-center align-items-center">
+        <a class="nav-item nav-link active" href="#">Help</a>
+        <a class="nav-item nav-link" href="#">Products</a>
+        <a class="nav-item nav-link" href="#">Company</a>
+        <a class="nav-item nav-link" href="#">Sign up</a>
+        <a class="nav-item nav-link" href="#">Log in</a>
+      </div>
+    </nav>
+    <!-- welcome page notice msg -->
+    <div class="notice_msg align-items-center justify-content-between">
+      <span>Having trouble with your transfer? We know it’s frustrating, but hang in there and we’ll get things back up and running <a class="text-white" href="https://wetransfer.statuspage.io" target="_blank">as soon as we can</a></span>
+      <span class="notice_close">x</span>
+    </div>
+    <!-- accept terms part -->
+    <!-- accept terms overlay -->
+    <div class="terms_part_overlay"></div>
+    <!-- accept terms -->
+    <div class="terms_part terms_terms justify-content-between flex-column"> <!--Change to d-flex-->
+      <div class="terms_top">
+        <div class="terms_logo"><img src="https://prod-cdn.wetransfer.net/packs/media/images/apple-touch-icon-bd1315cf.png" alt="Logo" /></div>
+        <h2 class="terms_title">You're <span class="terms_title_span">almost</span> there</h2>
+        <p class="terms_parag">To continue, please agree to our <a class="text-dark" href="#terms">Terms of Service.</a></p>
+      </div>
+      <div class="terms_bottom d-flex align-items-center justify-content-center">
+        <button class="btn btn-primary i_agree_terms">I agree</button>
+      </div>
+    </div> 
+    <!-- main container -->
+    <div class="pages_container">
+      <!-- welcome page main content -->
+      <div class="welcome_page">
+        <div class="welcome_content">
+          <!-- accept cookies part -->
+          <div class="cookies_part d-flex flex-column text-white">
+            <div class="cookies_top">
+              <p class="cookies_welcome_msg">Welcome to WeTransfer</p>
+              <h1 class="cookies_welcome_title">Transfer ideas. <b>Transform the world.</b></h1>
+              <p class="cookies_welcome_parag1">By accepting our cookies, you directly help us to expand our pledge to the planet. This year alone, WeTransfer has committed to planting over 175,000 trees, and we’re just getting started. You’ll have a positive impact by simply experiencing our award-winning ads.</p>
+              <p class="cookies_welcome_parag2">Our website uses cookies to improve performance, service, and to better understand your needs. By accepting our third-party cookies, we and our partners are able to offer you more relevant advertising on and outside of our website(s) and apps.</p>
+            </div>
+            <div class="cookies_bottom first_view">
+              <button class="accept_cookies btn btn-primary">I accept</button>
+              <button class="manage_cookies btn btn-outline-primary">Manage cookies</button>
+              <button class="refuse_cookies btn btn-link">No thanks</button>
+            </div>
+            <!-- manage cookies - div will show when click on manage cookies btn -->
+            <div class="second_view flex-column justify-content-between">
+              <div class="cookies_bottom">
+                <button class="acceptall_cookies btn btn-primary">Accept all</button>
+                <button class="refuse_cookies btn btn-link">No thanks</button>
+                <button class="save_cookies btn btn-outline-primary">Save and close</button>
+              </div>
+              <div class="manage_cookies_text">Manage cookies</div>
+            </div>
+          </div>
+          <!-- bottom right part (Sea Trees) -->
+          <div class="sea_trees_part text-white">
+            Sea Trees
+          </div>
+        </div> <!-- end Welcome content-->
+      </div> <!--end welcome page-->
+
+      <!-- add files and transfer (form) -->
+      <form action='#' class="terms_part add_files_form justify-content-between flex-column" method="POST" enctype="multipart/form-​data">
+        <div class="form_inputs_container" style="height: 310px;">
+          <label for="file">
+            <div class="add_file terms_top d-flex align-items-center">
+              <span class="plus_icon d-blox">+</span>
+              <div>
+                <h2 class="add_file_title fs-5 fw-normal">Add your files</h2>
+                <small class="text-secondary"><u>Or select a folder</u></small>
+                <input class="d-none files" type="file" name="file" multiple="multiple" id="file" />
+              </div>
+            </div>
+          </label>
+          <div class="input_fields d-flex align-items-center flex-column">
+            <input class="form_input email_to w-100" type="email" name="email_to" placeholder="Email to" />
+            <input class="form_input your_email w-100 border-top-0 border-bottom-0"  type="email" name="your_email" placeholder="Your email" />
+            <textarea class="form_input message w-100" name="message" cols="4" rows="3" placeholder="Message"></textarea>
+          </div>
+          <div class="hided_inputs">
+            <div class="transfer_type px-3 py-2 d-flex flex-column border-bottom">
+              <div><input class="transfer_email_checked form-check-input" type="radio" name="transfer" id="send_email" checked /> <label class="label_send ms-2 form-check-label" for="send_email"><small>Send email transfer</small></label></div>
+              <div><input class="transfer_link_checked form-check-input" type="radio" name="transfer" id="get_link" /> <label class="label_getlink ms-2 form-check-label" for="get_link"><small>Get transfer link</small></label></div>
+            </div>
+            <div class="expires_date border-bottom d-flex justify-content-between align-items-center px-3 py-2 text-secondary">
+              <div class="d-flex flex-column ">
+                <span class="expires_after">Expires after</span>
+                <span class="expires_week"><small>1 week</small></span>
+              </div>
+              <svg class="transfer__option-plus" style="width: 30px;" viewBox="0 1 32 13"><rect width="32" height="13" y="1" fill="#fcb315" fill-rule="evenodd" rx="6.5"></rect><path fill="#ffffff" fill-rule="evenodd" d="M8 10.232V4.598h2.424c1.343 0 2.088.762 2.088 1.86 0 1.113-.745 1.932-2.088 1.932H9.097v1.842H8zm2.326-4.75H9.097v2.023h1.229c.712 0 1.072-.434 1.072-1.032 0-.59-.36-.99-1.072-.99zm3.201 4.75V4.598h2.416c1.351 0 2.08.655 2.08 1.753 0 .802-.41 1.433-1.188 1.703l1.4 2.178H17.04l-1.294-2.047h-1.121v2.047h-1.098zm2.367-4.75h-1.27v1.843h1.27c.671 0 1.015-.41 1.015-.966 0-.54-.36-.876-1.015-.876zm2.866 1.933c0-1.679 1.13-2.915 2.874-2.915 1.711 0 2.866 1.236 2.866 2.915s-1.155 2.915-2.866 2.915c-1.744 0-2.874-1.236-2.874-2.915zm1.13 0c0 1.147.696 1.974 1.744 1.974 1.04 0 1.736-.836 1.736-1.974s-.696-1.973-1.736-1.973c-1.048 0-1.744.827-1.744 1.973z"></path></svg>
+            </div>
+            <div class="set_password border-bottom d-flex justify-content-between align-items-center px-3 py-2 text-secondary">
+              <div class="d-flex flex-column ">
+                <p class="password_txt">Password</p>
+                <p><small>Set password</small></p>
+              </div>
+              <svg class="transfer__option-plus" style="width: 30px;" viewBox="0 1 32 13"><rect width="32" height="13" y="1" fill="#fcb315" fill-rule="evenodd" rx="6.5"></rect><path fill="#ffffff" fill-rule="evenodd" d="M8 10.232V4.598h2.424c1.343 0 2.088.762 2.088 1.86 0 1.113-.745 1.932-2.088 1.932H9.097v1.842H8zm2.326-4.75H9.097v2.023h1.229c.712 0 1.072-.434 1.072-1.032 0-.59-.36-.99-1.072-.99zm3.201 4.75V4.598h2.416c1.351 0 2.08.655 2.08 1.753 0 .802-.41 1.433-1.188 1.703l1.4 2.178H17.04l-1.294-2.047h-1.121v2.047h-1.098zm2.367-4.75h-1.27v1.843h1.27c.671 0 1.015-.41 1.015-.966 0-.54-.36-.876-1.015-.876zm2.866 1.933c0-1.679 1.13-2.915 2.874-2.915 1.711 0 2.866 1.236 2.866 2.915s-1.155 2.915-2.866 2.915c-1.744 0-2.874-1.236-2.874-2.915zm1.13 0c0 1.147.696 1.974 1.744 1.974 1.04 0 1.736-.836 1.736-1.974s-.696-1.973-1.736-1.973c-1.048 0-1.744.827-1.744 1.973z"></path></svg>
+            </div>
+          </div>
+        </div>
+        <div class="terms_bottom border-top-0 d-flex align-items-center justify-content-center">
+          <span class="form_options">...</span>
+          <button class="transfer_files_btn btn btn-secondary bg-secondary border-secondary disabled" type="submit">Transfer</button>
+        </div>
+      </form>
+      <!-- form error messages and notices -->
+      <!-- error wrong email -->
+      <div class="your_email_alert wrong_email text-center">
+        <i class="fa fa-exclamation-circle"></i>
+        <h3 class="mt-3">Whoops!</h3>
+        <p class="text-center">It looks like one of the email addresses you entered is incorrect</p>
+      </div>
+      <!-- create email alert -->
+      <div class="your_email_alert create_account">
+        <p class="mb-3">Pop in your email and we’ll let you know when your files get downloaded.</p>
+        <p class="mb-3">You’ll need to verify your email so we know it’s really you. Don’t want to verify every time?</p>
+        <a href="#" class="btn btn-light" role="button" >Create a free account</a>
+      </div>
+      <!-- ready and download (div will show after sending first form)-->
+      <div class="terms_part ready_and_download align-items-center justify-content-between flex-column  ">
+        <div class="ready_top border-bottom w-100">
+          <div class="download_icon d-flex justify-content-center">
+            <i class="fa fa-arrow-circle-down bg-secondary text-white rounded-circle"></i>
+          </div>
+          <div class="download_intro mt-3 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="download_title fs-4 fw-normal">Ready when you are</h2>
+            <p class="text-secondary"><small>Transfer expire in 6 days</small></p>
+          </div>
+        </div>
+        <div class="img_info_container w-100 d-flex align-items-center justify-content-between">
+          <div class="left_info">
+            <span class="d-block">3544220.psd</span>
+            <span class="text-secondary">139 MB</span><small class="text-secondary">psd</small>
+          </div>
+          <div class="search_icon">
+            <i class="fa fa-search"></i>
+          </div>
+        </div>
+        <div class="terms_bottom w-100 d-flex align-items-center justify-content-center">
+          <button class="btn btn-primary i_agree_terms ready_download">Download</button>
+        </div>
+      </div> 
+      <!-- your download has started (div will show after clicking download button)-->
+      <div class="terms_part download_started align-items-center justify-content-between flex-column  ">
+        <div class="download_top w-100 text-center" style="height: 305px;">
+          <div class="download_icon download_started_icon d-flex justify-content-center">
+            <i class="fa fa-chevron-circle-down bg-secondary text-white rounded-circle"></i>
+          </div>
+          <h2 class="download_title px-2 fs-4 fw-normal">Your download has started</h2>
+        </div>
+        <div class="terms_bottom w-100 d-flex align-items-center justify-content-center">
+          <i class="back_icon fa fa-chevron-circle-left"></i><button class="btn btn-primary send_afile">Send a file?</button>
+        </div>
+      </div> 
+      <!-- form continue to send file  (div will show after clicking "send a file" btn)-->
+      <div class="terms_part continue_download align-items-center justify-content-between flex-column  ">
+        <div class="download_top w-100 text-center" style='height:310px;'>
+          <div class="mt-3 d-flex justify-content-center">
+            <img src="./images/continue_img.png" alt="continue">
+          </div>
+          <h2 class="px-2 fs-4 fw-normal">Go bigger, better, stronger, faster</h2>
+          <a class="the_link" href="#"><small>Get WeTransfer Pro</small></a>
+        </div>
+        <div class="terms_bottom w-100 d-flex align-items-center justify-content-center">
+        <button class="btn btn-primary continue_to_send">Continue</button>
+        </div>
+      </div> 
+      <!-- website home page -->
+      <div class="home_page">
+        <div class="getwetransfer_pro_home the_link">Get WeTransfer Pro</div>
+        <div class="image_block the_link flex-column justify-content-between text-white text-center">
+          <h1>My Back Pages</h1>
+          <p class="mb-4">What Janis Joplin's diaries tell us about the creative importance of scrapbooking</p>
+          <img class="the_img_home" src="https://backgrounds.wetransfer.net/cp_joplin/joplin1_t1_v1/assets/images/img1.png" alt="image"/>
+          <div class="mt-3"><button class="a_btn the_link">Take a look</button></div>
+        </div>
+      </div> <!-- end home page -->
+
+      <!-- get weTransfer Pro page -->
+      <div class="get_wetransf">
+        <div class="topbar">
+          <div class='close_getTr_page'>x</div>
+        </div>
+        <div class="get_page_container d-flex flex-column align-items-center">
+          <h1 class="wetransfer_pro_tiltle">WeTransfer Pro</h1>
+          <p class="mt-3 mb-4 fs-2 text-center">Three tools. One account.<br>Endless possibilities.</p>
+          <button class="get_wetransfer_btn btn btn-dark">Get WeTransfer Pro</button>
+          <span class="text-secondary mt-3"><small>US$12 per month</small></span>
+          <video class='wetransfer_video' autoplay loop>
+            <source src="https://prod-cdn.wetransfer.net/packs/media/assets/pro-products-en-fdb6b10c.mp4" type="video/mp4" />
+            Your Browser Does Not Support Videos
+          </video>
+          <p class="get_page_intro_p">Save everything that inspires you with Collect, make beautiful slides with Paste®, and send big files around the world with WeTransfer. Get all three tools with the all-new WeTransfer Pro, and turn even the smallest idea into something worth sharing.</p>
+          <h2 class="get_page_title">Designed for creative professionals</h2>
+          <section class="get_trans_account w-100 row justify-content-center">  <!--start wetransfer accounts section-->
+            <div class="col-md-6 free_account"> <!--start free account -->
+              <h2 class="free_title border-bottom">Free</h2>
+              <p class="mt-3 mb-2 fs-5">Three tools. One account. Just the basics.</p>
+              <div class="fs-4 mb-1 mt-5">USD$0</div>
+              <ul class="ps-4 text-secondary mt-5">
+                <li class="mb-1">Just for you</li>
+                <li class="mb-1">Send up to 2 GB in WeTransfer</li>
+                <li class="mb-1">Create up to 3 decks in Paste®</li>
+                <li class="mb-1">Boards aren’t synced in Collect</li>
+              </ul>
+              <button class="btn btn-dark w-100 p-3 mt-3 create_account_btn">Create WeTransfer account</button>
+            </div> <!-- end free account-->
+            <div class="col-md-6 pro_account">  <!--start pro account-->
+              <div class="wetransfer_pro_options">
+                <h2 class="pro_title border-bottom">Pro</h2>
+                <p class="mt-3 mb-2 fs-5">Three tools. One account. All the best bits.</p>
+                <div class="d-flex my-2"> <!--monthly ammount-->
+                  <div><span class="mb-1 fs-4">US$12</span><br><span class="text-secondary">monthly<br>per person</span></div>
+                  <div class="slash mx-3 text-secondary">/</div>
+                  <div><span class="mb-1 fs-4">US$120</span><br><span class="text-secondary">yearly<br>per person</span></div>
+                </div>
+                <ul>
+                  <li class="mb-1">Invite your team (or don’t, whatever)</li>
+                  <li class="mb-1">Send up to 20 GB in WeTransfer</li>
+                  <li class="mb-1">Create unlimited decks in Paste®</li>
+                  <li class="mb-1">Sync unlimited boards in Collect</li>
+                </ul>
+                <button class="btn btn-primary my-3 w-100 px-4 py-3 pro_btnbtn">Get WeTransfer Pro</button>
+              </div> 
+              <div class="wetransfer_pro_cat mt-5">
+                <div class="wetransferone mb-3">
+                  <div class="wetransfer_logo d-flex align-items-center">
+                    <img src="./images/logo.png" alt="logo" />
+                    <h2 class='fs-6 ms-3 mb-2'>WeTransfer</h2>
+                  </div>
+                  <div class="pro_items"><i class="fa fa-check me-3"></i><span>1 TB storage per team member</span></div>
+                  <div class="pro_items"><i class="fa fa-check me-3"></i><span>Password-protected transfers</span></div>
+                  <div class="pro_items"><i class="fa fa-check me-3"></i><span>Custom WeTransfer page</span></div>
+                </div>
+                <div class="pasteone mb-3">
+                  <div class="wetransfer_logo d-flex align-items-center">
+                    <img src="./images/logo2.png" alt="logo" />
+                    <h2 class='fs-6 ms-3 mb-2'>Paste</h2>
+                  </div>
+                  <div class="pro_items"><i class="fa fa-check me-3"></i><span>Custom colors, fonts, and logo</span></div>
+                  <div class="pro_items"><i class="fa fa-check me-3"></i><span>Create and share unlimited decks</span></div>
+                  <div class="pro_items"><i class="fa fa-check me-3"></i><span>Real-time remote collaboration</span></div>
+                </div>
+                <div class="collectone">
+                  <div class="wetransfer_logo d-flex align-items-center">
+                    <img src="./images/logo3.png" alt="logo" />
+                    <h2 class='fs-6 ms-3 mb-2'>Collect</h2>
+                  </div>
+                  <div class="pro_items"><i class="fa fa-check me-3"></i><span>200 GB storage</span></div>
+                  <div class="pro_items"><i class="fa fa-check me-3"></i><span>Create boards as a team</span></div>
+                  <div class="pro_items"><i class="fa fa-check me-3"></i><span>Syncing across unlimited devices</span></div>
+                </div>
+              </div>
+            </div> <!-- end pro account-->
+          </section> <!-- end wetransfer aaccounts section-->
+          <h2 class="creative_set_title">Your set of tools for creative work</h2>
+          <section class="row creative_part_one creative_parts d-flex justify-content-center align-items-center">  <!-- start creative paart one section-->
+            <div class="col-md-6 first_creative_part">
+              <h2 class="fw-normal">Own your delivery with <strong class="me-1">WeTransfer</strong></h2>
+              <p>Share your biggest files and deliver your work on-brand and in style. Track downloads, control access, and add custom branding. You can send up to 20 GB of work in one go—that’s about 800 RAW images (or 100 TikTok videos). And with 1 TB of storage, why stop there?</p>
+            </div>
+            <div class="col-md-6 second_creative_part creative_img_cont">
+              <img class="w-100" src="https://prod-cdn.wetransfer.net/packs/media/assets/transfer-e5cc0493.png" alt="image" />
+              <div class="second_creative_info d-flex align-items-center">
+                <img src="./images/logo.png" alt="logo">
+                <p><strong>WeTransfer</strong> to send big files</p>
+              </div>
+            </div>
+          </section> <!-- end creative part one section -->
+
+          <!-- start .creative part two section -->
+          <section class="creative_part_two creative_parts row d-flex justify-content-center align-items-center">
+            <div class="col-md-6 creative_part_two_left creative_img_cont">
+              <img class="w-100" src="https://prod-cdn.wetransfer.net/packs/media/assets/paste-2e1f9717.png" alt="image" />
+              <div class="creative_part_two_left_info d-flex align-items-center justify-content-end">
+                <img src="./images/logo2.png" alt="logo" />
+                <p><strong>Paste</strong> to pitch and present</p>
+              </div>
+            </div>
+            <div class="col-md-6 creative_part_two_right d-flex flex-column">
+              <h2 class="fw-normal">Make slides in seconds with <strong>Paste</strong></h2>
+              <p>Pitch ideas. Show work in progress. Stay in sync. Say goodbye to formatting with Paste’s stunning, auto-formatted slides that sell ideas with impact. And with Pro, you’ll never run out of decks.</p>
+            </div>
+          </section> <!--end creative part two section-->
+          <!--start Creative part three section -->
+          <section class="creative_part_three creative_parts row d-flex justify-content-center align-items-center">
+            <div class="col-md-6 creative_part_three_left">
+              <h2 class="fw-normal">Save ideas on the go with <strong>Collect</strong></h2>
+              <p>Any file. Any link. Save anything that inspires your ideas, and organize it all into beautiful boards. Want to take your inspiration everywhere you go? Sync your stuff across all your devices with Pro.</p>
+            </div>
+            <div class="col-md-6 creative_part_three_right creative_img_cont">
+              <img class="w-100" src="https://prod-cdn.wetransfer.net/packs/media/assets/collect-85869089.png" alt="image" />
+              <div class="creative_part_three_right_info d-flex align-items-center">
+                <img src="./images/logo3.png" alt="logo" />
+                <p><strong>Collect</strong> to organize references</p>
+              </div>
+            </div>
+          </section> <!--end Creative part three section -->
+          <div class="end_title text-center">
+            <h1>A creative suite designed for and<br>inspired by creative pros</h1>
+            <button class="btn btn-dark">Get WeTransfer Pro</button>
+          </div>
+          
+        </div> <!-- end get wetransfer page container-->
+        <!-- footer page -->
+        <footer class="d-flex align-items-center justify-content-between">
+          <div class="links d-flex justify-content-between align-items-center">
+            <div>
+              <img src="./images/logo.png" alt="logo" class="d-inline-block d-md-none" />
+              <i class="fa fa-globe-americas me-2 d-none d-md-inline-block "></i>
+              <select class="border-0 select_box">
+                <option value="English">English</option>
+                <option value="Français">Français</option>
+                <option value="Italiano">Italiano</option>
+                <option value="Deutsch">Deutsch</option>
+              </select>
+            </div>
+            <a href='#' target='_blank'>Terms</a>
+            <a href="#" trget='_blank'>Your Privacy Choices</a>
+            <a href="#" trget='_blank'>Press</a>
+            <a href="#" trget='_blank'>Jobs</a>
+          </div>
+          <div class='social_icons d-none d-md-flex justify-content-between align-items-center'>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+          </div>
+        </footer>
+
+      </div> <!-- end get we transfer page-->
+      <div class="clearfix"></div> <!--Cleal the float-->
+    </div>  <!-- end pages container-->
+
+    <!-- import jquery CDN  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- import jquery cookies -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <!-- import booststrap js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- import js files -->
+    <script src="./js/welcome.js"></script>
+    <script src="./js/forms.js"></script>
+    <script src="./js/getWetransfer.js"></script>
+    <script src="./js/home.js"></script>
+  </body>
+</html>

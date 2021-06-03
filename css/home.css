@@ -1,0 +1,95 @@
+/* home page */
+.home_page {
+  display: none;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+/*** styling Get Wetransfer pro btn ***/
+.getwetransfer_pro_home {
+  position: fixed;
+  left: 58px;
+  bottom: 18px;
+  background: #000;
+  color: #fff;
+  font-size: 32px;
+  padding: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.getwetransfer_pro_home:hover {
+  background-color: #1b1b1b;
+}
+/*** home page Image block ***/
+.image_block {
+  display: flex;
+  position: absolute;
+  width: 70%;
+  max-height: 70vh;
+  height: 70vh;
+  top: 40%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+/*** Images ***/
+.the_img_home {
+  width: 100%;
+  height: 100%;
+}
+.the_img_home {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.the_img_home:hover {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+/**** Take a look btn ****/
+.a_btn {
+  background: transparent;
+  border: 1px solid #eee;
+  padding: 6px;
+  color: #fff;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.a_btn:hover {
+  color: #333;
+  font-weight: 700;
+}
+.a_btn::after {
+  content: "";
+  background-color: #009688;
+  position: absolute;
+  z-index: -1;
+  padding: 0.85em 0.75em;
+  display: block;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  left: 0;
+  right: 0;
+  top: 100%;
+  bottom: -100%;
+}
+.a_btn:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}

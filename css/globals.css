@@ -1,0 +1,20 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Roboto&display=swap"); */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+button:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}

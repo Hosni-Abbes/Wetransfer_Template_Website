@@ -1,0 +1,169 @@
+/* styling welcome page */
+
+/*give the body a background lightblue -- (i can't find the background image of the website) */
+body {
+  font-family: Actief Grotesque, -apple-system, \.SFNSText-Regular,
+    San Francisco, Roboto, Segoe UI, Helvetica Neue, Lucida Grande, sans-serif;
+}
+
+/* give position relative to welcome page container */
+.pages_container {
+  position: relative;
+}
+/* styling the navbar of welcome page */
+.nav___bar {
+  height: 54px;
+  z-index: 100;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  right: 10px;
+  overflow: hidden;
+}
+.navbar_links_block {
+  min-width: 356px;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.navbar_links_block a {
+  color: #000;
+  background-color: #fff;
+  height: 38px;
+  padding: 0 12px;
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.navbar_links_block a:not(:last-of-type) {
+  border-right: 1px solid #e7e7e7;
+}
+.navbar_links_block a:hover {
+  background-color: #f7f7f7;
+  color: #000;
+}
+
+/* styling welcome page */
+.welcome_page {
+  background-image: url("https://wallpapercave.com/wp/wp4491195.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+  opacity: 0.7;
+}
+/* styling the notice msg */
+.notice_msg {
+  background-color: #484a4d;
+  color: #fff;
+  padding: 10px;
+  width: 70%;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  top: 24px;
+  left: 11%;
+  max-width: 70vw;
+  line-height: 1.4;
+  z-index: 111;
+}
+.notice_msg::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #484a4d;
+  position: absolute;
+  top: 13px;
+  left: -5px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.notice_close {
+  color: #a9a9a9;
+  font-size: 11px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 16px;
+  cursor: pointer;
+}
+/* styling welcome page main content */
+.welcome_content {
+  position: relative;
+  height: 100%;
+}
+/* styling accept cookies part  */
+.cookies_part {
+  max-width: 770px;
+  position: absolute;
+  top: 50%;
+  left: 445px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.cookies_welcome_msg {
+  font-size: 22.5px;
+}
+.cookies_welcome_title {
+  font-size: 68px;
+  font-family: auto GT Super WT, -apple-system, \.SFNSText-Regular,
+    San Francisco, Roboto, Segoe UI, Helvetica Neue, Lucida Grande, sans-serif;
+  line-height: 72px;
+}
+.cookies_welcome_parag1 {
+  font-size: 18px;
+  padding: 10px 0;
+}
+.cookies_welcome_parag2 {
+  font-size: 14px;
+}
+.cookies_bottom {
+  margin-top: 18px;
+}
+.cookies_bottom button {
+  height: 40px;
+  padding: 0 22px;
+  opacity: 0.9;
+  color: #fff;
+  font-size: 14px;
+}
+.cookies_bottom .manage_cookies {
+  margin: 0px 16px;
+  border-color: #fff;
+}
+.cookies_bottom .save_cookies {
+  border-color: #fff;
+}
+.cookies_bottom button:hover {
+  opacity: 1;
+  border: none;
+}
+.second_view {
+  display: none;
+}
+.manage_cookies_text {
+  font-size: 42px;
+  margin-top: 25px;
+}
+/*buttons media query*/
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cookies_bottom button {
+    min-width: 100px;
+  }
+}
+/* styling welcome bottom right part (sea_trees_part)*/
+.sea_trees_part {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+}
